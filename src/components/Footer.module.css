@@ -1,0 +1,75 @@
+.footer {
+  background: #060e1c;
+  padding: 50px 5% 30px;
+  border-top: 1px solid var(--card-border);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--card-border);
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.logo span { color: var(--verde); }
+
+.desc {
+  color: var(--gris);
+  font-size: 0.85rem;
+  max-width: 240px;
+  line-height: 1.6;
+}
+
+.linkGroup h5 {
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.linkGroup ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.linkGroup a {
+  color: var(--gris);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.linkGroup a:hover { color: var(--verde); }
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  flex-direction: column;
+}
+
+.bottom p {
+  color: var(--gris);
+  font-size: 0.8rem;
+}
+
+.noAfil { color: #55667a !important; font-size: 0.75rem !important; }
+
+.disclaimer {
+  font-size: 0.75rem;
+  color: #55667a;
+  margin-top: 1rem;
+  line-height: 1.6;
+}

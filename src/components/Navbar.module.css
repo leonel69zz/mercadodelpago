@@ -1,0 +1,66 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(10, 22, 40, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--card-border);
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+
+.logo {
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--verde);
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.links a {
+  color: var(--gris);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.links a:hover,
+.links a.active {
+  color: var(--verde);
+}
+
+.cta {
+  background: var(--verde);
+  color: #fff !important;
+  padding: 0.55rem 1.4rem;
+  border-radius: 8px;
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.cta:hover {
+  background: var(--verde-dark);
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+}

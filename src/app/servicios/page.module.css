@@ -1,0 +1,161 @@
+.hero {
+  padding: 140px 5% 70px;
+}
+
+.tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--verde);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.hero h1 {
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+}
+
+.accent { color: var(--verde); }
+
+.subtitle {
+  color: var(--gris);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.section { padding: 60px 5% 90px; }
+
+.plansGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.planCard {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 2.2rem;
+  position: relative;
+  transition: 0.3s;
+}
+
+.planCard:hover { transform: translateY(-4px); }
+
+.featured {
+  border-color: rgba(0,192,106,0.5);
+  background: rgba(0,192,106,0.05);
+}
+
+.planBadge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--verde);
+  color: #fff;
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  white-space: nowrap;
+}
+
+.planName {
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.planPrice {
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--verde);
+  margin: 1rem 0 0.3rem;
+}
+
+.planPrice span { font-size: 1rem; color: var(--gris); font-weight: 400; }
+
+.planDesc {
+  color: var(--gris);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.planFeatures {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.planFeatures li {
+  font-size: 0.88rem;
+  color: var(--gris);
+  display: flex;
+  gap: 0.6rem;
+}
+
+.planFeatures li::before {
+  content: "✓";
+  color: var(--verde);
+  font-weight: 700;
+  min-width: 14px;
+}
+
+.btnPrimary {
+  display: block;
+  text-align: center;
+  background: var(--verde);
+  color: #fff;
+  padding: 0.85rem 1.8rem;
+  border-radius: 10px;
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+.btnPrimary:hover { background: var(--verde-dark); }
+
+.btnOutline {
+  display: block;
+  text-align: center;
+  border: 1.5px solid var(--card-border);
+  color: var(--texto);
+  padding: 0.85rem 1.8rem;
+  border-radius: 10px;
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+.btnOutline:hover { border-color: var(--verde); color: var(--verde); }
+
+.paymentNote {
+  background: rgba(0,158,227,0.08);
+  border: 1px solid rgba(0,158,227,0.2);
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 680px;
+}
+
+.payIcon { font-size: 1.5rem; flex-shrink: 0; }
+
+.paymentNote p { color: var(--gris); font-size: 0.88rem; line-height: 1.5; }
+.paymentNote strong { color: var(--texto); }

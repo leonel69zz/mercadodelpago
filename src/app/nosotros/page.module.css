@@ -1,0 +1,127 @@
+.hero {
+  padding: 140px 5% 70px;
+  background: linear-gradient(180deg, rgba(0,192,106,0.06) 0%, transparent 60%);
+}
+
+.tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--verde);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.hero h1 {
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+}
+
+.accent { color: var(--verde); }
+
+.subtitle {
+  color: var(--gris);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.section { padding: 80px 5%; }
+
+.sectionAlt {
+  padding: 80px 5%;
+  background: var(--azul-mid);
+}
+
+.section h2, .sectionAlt h2 {
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.missionBox {
+  background: linear-gradient(135deg, rgba(0,192,106,0.1), rgba(0,192,106,0.03));
+  border: 1px solid rgba(0,192,106,0.2);
+  border-radius: 20px;
+  padding: 3rem;
+  max-width: 700px;
+  margin-top: 2rem;
+}
+
+.missionBox p {
+  color: var(--gris);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.missionBox strong { color: var(--texto); }
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.4rem;
+  margin-top: 2.5rem;
+}
+
+.valCard {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 1.8rem;
+  transition: 0.3s;
+}
+
+.valCard:hover { border-color: rgba(0,192,106,0.4); transform: translateY(-3px); }
+
+.valIcon { font-size: 1.8rem; margin-bottom: 1rem; }
+
+.valCard h3 {
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.valCard p { color: var(--gris); font-size: 0.9rem; line-height: 1.6; }
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.teamCard {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 1.8rem;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.teamCard:hover { border-color: rgba(0,192,106,0.3); transform: translateY(-3px); }
+
+.teamAvatar {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 0 auto 1rem;
+}
+
+.teamCard h4 {
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.teamCard span { color: var(--verde); font-size: 0.85rem; }
+
+.teamCard p { color: var(--gris); font-size: 0.85rem; line-height: 1.5; margin-top: 0.6rem; }
