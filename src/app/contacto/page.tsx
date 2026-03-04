@@ -30,7 +30,7 @@ export default function Contacto() {
           </div>
           <div className={styles.contactItem}>
             <div className={styles.cIcon}>📱</div>
-            <div><div className={styles.cLabel}>WhatsApp</div><div className={styles.cVal}>+52 55 1234 5678</div></div>
+            <div><div className={styles.cLabel}>WhatsApp</div><div className={styles.cVal}>+52 99 92 3690 14</div></div>
           </div>
           <div className={styles.contactItem}>
             <div className={styles.cIcon}>📍</div>
